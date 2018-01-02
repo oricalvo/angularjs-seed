@@ -21,7 +21,7 @@ async function main() {
 }
 
 function openWebServer() {
-    child_process.spawn(`npx http-server -p ${port}`, {
+    child_process.spawn(`node node_modules/http-server/bin/http-server -p ${port}`, {
         stdio: "inherit",
         shell: true,
     });
@@ -33,7 +33,12 @@ function openBrowser() {
 
 function build(watch) {
     return new Promise(function(resolve, reject) {
-        const command = watch ? "npx webpack -w" : "npx webpack";
+        let command = "node node_modules/webpack/bin/webpack";
+
+        if(watch) {
+            command += " -w";
+        }
+
         child_process.spawn(command, {
             stdio: "inherit",
             shell: true,
