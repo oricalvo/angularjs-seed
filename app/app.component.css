@@ -1,0 +1,8 @@
+app-root {
+    display: flex;
+    background-color: lightblue;
+    height: 100%;
+}
+
+app-root h1 {
+}

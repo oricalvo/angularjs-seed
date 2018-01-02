@@ -3,13 +3,17 @@
     "start": "node build/dev.js"
   },
   "dependencies": {
+    "angular": "^1.6.7"
+  },
+  "devDependencies": {
     "@types/angular": "^1.6.39",
-    "angular": "^1.6.7",
-    "http-server": "^0.10.0",
-    "open": "^0.0.5",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0",
+    "css-loader": "^0.28.7",
     "raw-loader": "^0.5.1",
     "ts-loader": "^3.2.0",
-    "typescript": "^2.6.2",
-    "webpack": "^3.10.0"
+    "style-loader": "^0.19.1",
+    "http-server": "^0.10.0",
+    "open": "^0.0.5"
   }
 }
