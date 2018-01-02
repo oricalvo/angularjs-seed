@@ -24,7 +24,6 @@ function openWebServer() {
     child_process.spawn(`npx http-server -p ${port}`, {
         stdio: "inherit",
         shell: true,
-        detached: true,
     });
 }
 
@@ -38,7 +37,6 @@ function build(watch) {
         child_process.spawn(command, {
             stdio: "inherit",
             shell: true,
-            detached: watch,
         }).on("close", function() {
             resolve();
         });
