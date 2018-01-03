@@ -2,7 +2,27 @@ app-root {
     display: flex;
     background-color: lightblue;
     height: 100%;
+    flex-direction: column;
 }
 
 app-root h1 {
+    height: 100%;
 }
+app-root div.footer {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+app-root div.color-code {
+ color: white;
+}
+
+
+app-root button {
+    /*margin-bottom: 40px;*/
+    /*text-align: center;*/
+    /*display: inline;*/
+    /*font-size: 1.3em;*/
+}
+
