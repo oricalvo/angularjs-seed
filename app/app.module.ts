@@ -1,10 +1,10 @@
-import {module} from "angular";
-import {AppComponent} from './app.component'
-import template from './app.component.html';
+import { module } from 'angular';
+import { AppComponent } from '../message/message.component'
+import template from '../message/message.component.html';
 
-export const appModule = module("myApp", []);
+export const appModule = module('myApp', []);
 
-appModule.component("appRoot", {
+appModule.component('appRoot', {
     controller: AppComponent,
     template: template,
 });

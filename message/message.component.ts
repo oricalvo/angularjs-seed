@@ -1,6 +1,6 @@
-import { appModule } from "./app.module";
-import template from "./app.component.html";
-import "./app.component.css";
+import { appModule } from '../app/app.module';
+import template from './message.component.html';
+import './message.component.css';
 
 export class AppComponent {
     color: string;
