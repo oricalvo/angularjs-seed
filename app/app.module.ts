@@ -1,6 +1,6 @@
 import { module } from 'angular';
-import { AppComponent } from '../message/colorMessage.component'
-import template from '../message/colorMessage.component.html';
+import { AppComponent } from './app.component'
+import template from './app.component.html';
 
 export const appModule = module('myApp', []);
 
