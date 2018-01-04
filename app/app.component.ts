@@ -1,17 +1,17 @@
 import { appModule } from './app.module';
 import template from './app.component.html';
 import './app.component.css';
-import { getRandomColor } from './helpers';
+import { getRandomColorHex } from './helpers';
 
 export class AppComponent {
     bgColor: string;
 
     constructor() {
-        this.bgColor = getRandomColor();
+        this.bgColor = getRandomColorHex();
     }
 
     rndColor() {
-        this.bgColor = getRandomColor();
+        this.bgColor = getRandomColorHex();
     }
 }
 
