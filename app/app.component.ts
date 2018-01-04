@@ -1,9 +1,6 @@
 import { appModule } from './app.module';
 import template from './app.component.html';
 import './app.component.css';
-import * as angular from 'angular';
-
-// import * as rgbHex from 'rgb-hex';
 
 export class AppComponent {
     bgColor: string;
