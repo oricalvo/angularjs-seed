@@ -1,6 +1,6 @@
 import { appModule } from '../app/app.module';
-import template from './message.component.html';
-import './message.component.css';
+import template from './colorMessage.component.html';
+import './colorMessage.component.css';
 import * as angular from 'angular';
 // import * as rgbHex from 'rgb-hex';
 
