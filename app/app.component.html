@@ -1,8 +1,10 @@
-<div class="app-body" ng-style="{'background-color': $ctrl.bgColor}">
-    <div>
-        <button class="btn btn-success" ng-click="$ctrl.rndColor()">Randomise color</button>
+<div class="component-root" ng-style="{'background-color': $ctrl.bgColor}">
+    <div class="app-body">
+        <div>
+            <button class="btn btn-success" ng-click="$ctrl.rndColor()">Randomise color</button>
+        </div>
     </div>
-</div>
-<div class="footer">
-    <div class="color-code"> Color is:&nbsp;<span>{{$ctrl.bgColor}}</span></div>
+    <div class="app-footer">
+        <div class="color-code"> Color is:&nbsp;<span>{{$ctrl.bgColor}}</span></div>
+    </div>
 </div>
