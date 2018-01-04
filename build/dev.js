@@ -16,14 +16,13 @@ async function main() {
     await delay(500);
 
     build(true);
-
-    process.exit();
 }
 
 function openWebServer() {
     child_process.spawn(`node node_modules/http-server/bin/http-server -p ${port}`, {
         stdio: "inherit",
         shell: true,
+        detach: true,
     });
 }
 
