@@ -22,6 +22,11 @@ export class AppComponent {
     }
 }
 
+appModule.component('appRoot', {
+    controller: AppComponent,
+    template: template,
+});
+
 const rgb2hex = (rgb: string): string => {
     const res = '#' + rgb.substr(4, rgb.indexOf(')') - 4)
         .split(',')
@@ -34,7 +39,7 @@ const getRandom256 = (): number => {
     return Math.floor((Math.random() * 256) + 0);
 }
 
-const pad = (str: string, size: number) => {
+const pad = (str: string, size: number): string => {
     while (str.length < size) {
         str = '0' + str;
     }
