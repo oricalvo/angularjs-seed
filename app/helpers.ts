@@ -3,7 +3,9 @@ export function getRandomColor(): string {
     const g = getRandom256();
     const b = getRandom256();
 
-    const str = "#" + pad(r.toString(16), 2) + pad(g.toString(16), 2) + pad(b.toString(16), 2);
+    const str = '#' + pad(r.toString(16), 2)
+        + pad(g.toString(16), 2)
+        + pad(b.toString(16), 2);
     return str;
 }
 

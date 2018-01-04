@@ -1,7 +1,7 @@
 import { appModule } from './app.module';
 import template from './app.component.html';
 import './app.component.css';
-import {getRandomColor} from './helpers';
+import { getRandomColor } from './helpers';
 
 export class AppComponent {
     bgColor: string;
@@ -19,4 +19,3 @@ appModule.component('appRoot', {
     controller: AppComponent,
     template: template,
 });
-
