@@ -22,7 +22,6 @@ function openWebServer() {
     child_process.spawn(`node node_modules/http-server/bin/http-server -p ${port}`, {
         stdio: "inherit",
         shell: true,
-        detach: true,
     });
 }
 

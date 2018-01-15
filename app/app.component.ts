@@ -2,16 +2,18 @@ import { appModule } from './app.module';
 import template from './app.component.html';
 import './app.component.css';
 import { getRandomColorHex } from './helpers';
+import {RootService} from './root,service';
 
 export class AppComponent {
-    bgColor: string;
-
-    constructor() {
-        this.bgColor = getRandomColorHex();
+    constructor(private rootService: RootService) {
     }
 
-    rndColor() {
-        this.bgColor = getRandomColorHex();
+    onRandomButtonClicked() {
+        this.rootService.generateRandomColor();
+    }
+
+    get state() {
+        return this.rootService.state;
     }
 }
 

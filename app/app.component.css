@@ -25,35 +25,3 @@ app-root .app-footer {
     margin-top: auto;
     margin-bottom: 40px;
 }
-
-app-root .color-code {
-    color: white;
-    font-size: 1.5em;
-}
-
-app-root .color-code span{
-    text-decoration: underline;
-    text-shadow: 1px 0px 1px #656565;
-    text-transform: uppercase;
-}
-
-.btn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 1.2em;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-
-.btn.btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-}
