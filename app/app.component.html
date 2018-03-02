@@ -1,10 +1,7 @@
-<div class="component-root" ng-style="{'background-color': $ctrl.state.bgColor}">
-    <div class="app-body">
-        <div>
-            <app-random-button on-click="$ctrl.onRandomButtonClicked()"></app-random-button>
-        </div>
-    </div>
-    <div class="app-footer">
-        <app-color-details bg-color="$ctrl.state.bgColor"></app-color-details>
-    </div>
-</div>
+<h1>AngularJS Seed</h1>
+
+<ul>
+    <li ng-repeat="contact in state.contacts">
+        <span>{{contact.name}}</span>
+    </li>
+</ul>

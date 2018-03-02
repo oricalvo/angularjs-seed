@@ -1,19 +1,17 @@
 import * as angular from 'angular';
 import { appModule } from './app.module';
-import './site.css';
 import { AppComponent } from './app.component';
-import {RootService} from './root,service';
-import {ColorDetailsComponent} from './colorDetails.component';
-import {RandomButtonComponent} from './randomButton.component';
+import {RootService} from './root.service';
+import {appStore} from "./app.store";
+import './site.css';
 
 const components = [
     AppComponent,
-    ColorDetailsComponent,
-    RandomButtonComponent,
 ];
 
 const services = [
-    RootService
+    RootService,
+    appStore,
 ];
 
 angular.bootstrap(document.querySelector('html'), [appModule.name]);

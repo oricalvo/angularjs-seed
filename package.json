@@ -4,18 +4,19 @@
   },
   "dependencies": {
     "angular": "^1.6.7",
-    "rgb-hex": "^2.1.0"
+    "css-loader": "^0.28.10",
+    "raw-loader": "^0.5.1",
+    "rgb-hex": "^2.1.0",
+    "style-loader": "^0.20.2",
+    "ts-loader": "^3.5.0",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.9.7"
   },
   "devDependencies": {
     "@types/angular": "^1.6.39",
-    "css-loader": "^0.28.7",
     "http-server": "^0.10.0",
     "open": "^0.0.5",
-    "raw-loader": "^0.5.1",
-    "style-loader": "^0.19.1",
-    "ts-loader": "^3.2.0",
     "tslint": "^5.8.0",
-    "typescript": "^2.6.2",
-    "webpack": "^3.10.0"
+    "typescript": "^2.6.2"
   }
 }

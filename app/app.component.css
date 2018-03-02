@@ -2,6 +2,7 @@ app-root {
     display: flex;
     height: 100%;
     flex-direction: column;
+    padding: 1em;
 }
 
 app-root .component-root {
