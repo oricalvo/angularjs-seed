@@ -4,6 +4,13 @@
   },
   "dependencies": {
     "angular": "^1.6.7",
+  },
+  "devDependencies": {
+    "@types/angular": "^1.6.39",
+    "http-server": "^0.10.0",
+    "open": "^0.0.5",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2",
     "css-loader": "^0.28.10",
     "raw-loader": "^0.5.1",
     "rgb-hex": "^2.1.0",
@@ -11,12 +18,5 @@
     "ts-loader": "^3.5.0",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.9.7"
-  },
-  "devDependencies": {
-    "@types/angular": "^1.6.39",
-    "http-server": "^0.10.0",
-    "open": "^0.0.5",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.2"
   }
 }
